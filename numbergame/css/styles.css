@@ -1,0 +1,17 @@
+html, body { margin: 0; padding: 0; font-family: Arial; }
+
+.main { }
+.header { }
+.title { background-color: darkslategray; padding: 5px }
+.title { text-align: center; color: coral; font-size: 18px; font-weight: bold; }
+
+.tools { margin-top: 10px; }
+.tools .pull-left { margin-left: 10px; }
+.tools .pull-right { margin-right: 10px; }
+.tools .timer { font-size: 18px; }
+.scores { font-family: Arial; text-align: center; }
+
+.game-canvas { margin-top: 20px;}
+.game-grid { margin: auto; width: 340px; border: 5px solid darkslategray; background-color: dimgray; }
+.grid-cell { width: 100px; height: 100px; background-color: coral; border-radius: 5px; margin: 5px; }
+.grid-cell .num-content { text-align: center; line-height: 100px; font-size: 48px; color: burlywood; text-shadow: -2px -1px 5px rgba(150, 150, 150, 1); }

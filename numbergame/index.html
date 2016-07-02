@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Number Sorting Game</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container main">
+        <div class="header">
+            <div class="title"><span>Number Sorting Game</span></div>
+            <div class="tools">
+                <div class="pull-left">
+                    <button type="button" id="startbtn" class="btn btn-success btn-lg">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> New game
+                    </button>
+                </div>
+                <div class="pull-right">
+                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    <span class="timer">
+                        <span id="sw_h">00</span>:
+                        <span id="sw_m">00</span>:
+                        <span id="sw_s">00</span>:
+                        <span id="sw_ms">00</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="game-canvas">
+            <div class="game-grid">
+                <div class="grid-cell pull-left"><div class="num-content" draggable="true" id="dr1">1</div></div>
+                <div class="grid-cell pull-left"><div class="num-content" draggable="true" id="dr2">2</div></div>
+                <div class="grid-cell pull-left"><div class="num-content" draggable="true" id="dr3">3</div></div>
+                <div class="grid-cell pull-left"><div class="num-content" draggable="true" id="dr4">4</div></div>
+                <div class="grid-cell pull-left"><div class="num-content" draggable="true" id="dr5">5</div></div>
+                <div class="grid-cell pull-left"><div class="num-content" draggable="true" id="dr6">6</div></div>
+                <div class="grid-cell pull-left"><div class="num-content" draggable="true" id="dr7">7</div></div>
+                <div class="grid-cell pull-left"><div class="num-content" draggable="true" id="dr8">8</div></div>
+                <div class="grid-cell pull-left"><div class="num-content" draggable="true" id="dr9">9</div></div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="scores"><a href="#" class="btn btn-link" id="rankings"><span class="glyphicon glyphicon-stats"> View Top 10 scores</span></a></div>
+        </div>
+    </div>
+    <div class="modal fade" id="dScore" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Congratulations! You solved the puzzle in <span id="totaltime">
+                        
+                        </span>!</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="inputUsername" placeholder="Enter username">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="saveBtn">Save score</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+<!-- /.modal -->
+    <div class="modal fade" id="dRankings" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="closeBtn">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+<!-- /.modal -->
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/timer.js" type="text/javascript"></script>
+    <script src="js/game.js" type="text/javascript"></script>
+</body>
+
+</html>
